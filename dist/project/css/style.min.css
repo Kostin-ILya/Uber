@@ -4,11 +4,13 @@ h1 {
 
 h3 {
   font-size: 60px;
+  text-decoration: underline;
+  text-transform: uppercase;
 }
 
 .block {
   height: 800px;
-  background-color: green;
+  background-color: orange;
 }
 
 .block_color {
