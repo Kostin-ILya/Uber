@@ -296,8 +296,8 @@ header nav {
 }
 
 .black img {
+  margin-top: 56px;
   position: absolute;
-  top: 50%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
