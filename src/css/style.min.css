@@ -473,4 +473,67 @@ header nav {
   text-transform: uppercase;
   text-align: center;
 }
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+.footer {
+  min-height: 156px;
+  padding: 14px 23px 39px;
+}
+
+.footer_divider {
+  margin: 0 auto;
+  width: 299px;
+  height: 4px;
+  background-color: #1fbad6;
+}
+
+.footer_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 34px;
+}
+
+.footer_wrapper div {
+  width: 33%;
+}
+
+.footer_social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer_social_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: #070716;
+  border-radius: 100%;
+  margin-right: 9px;
+  color: #eee;
+}
+
+.footer_social_item::before {
+  content: '';
+  display: block;
+}
 /*# sourceMappingURL=style.min.css.map */
