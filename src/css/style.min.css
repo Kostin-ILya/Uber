@@ -599,18 +599,19 @@ footer a:hover {
   color: #999999;
 }
 
-.footer_lang {
+.footer_links_lang {
   text-align: center;
+  margin-top: 19px;
 }
 
-.footer_lang a {
+.footer_links_lang a {
   font-size: 11px;
   font-weight: 400;
   text-transform: uppercase;
   color: #1fbad6;
 }
 
-.footer_lang a:hover {
+.footer_links_lang a:hover {
   color: #1fbad6;
 }
 /*# sourceMappingURL=style.min.css.map */
