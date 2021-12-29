@@ -24,16 +24,16 @@ header
 	padding: 13px 70px
 	margin: 0
 	list-style: none
-
 	&_link
 		font-size: 15px
 		font-weight: 300
 		color: #ffffff
 		text-decoration: none
-
-		&_item
-			border-right: 2px dotted black
-			padding-right: 28px
+	&_item
+		border-right: 2px dotted #4e4949
+		padding-right: 28px
+		&:last-child
+			border: none
 
 .subheader
 	margin-top: 51px
@@ -378,7 +378,7 @@ footer
 		display: flex
 		justify-content: space-between
 		padding-top: 34px
-		div
+		>div
 			width: 33%
 	&_social
 		display: flex
@@ -395,3 +395,44 @@ footer
 			&::before
 				content: ''
 				display: block
+<<<<<<< HEAD
+=======
+	&_mobile
+		display: flex
+		justify-content: flex-end
+		&_item
+			margin-left: 9px
+	&_links
+		width: 390px
+		margin: 0 auto
+		&_main
+			display: flex
+			justify-content: space-around
+			a
+				font-size: 15px
+				font-weight: 300
+				text-transform: uppercase
+				color: #070716
+				&:hover
+					color: #070716
+		&_sub
+			display: flex
+			justify-content: space-between
+			margin-top: 15px
+			a
+				font-size: 11px
+				font-weight: 300
+				text-transform: uppercase
+				color: #999999
+				&:hover
+					color: #999999
+	&_lang
+		text-align: center
+		a
+			font-size: 11px
+			font-weight: 400
+			text-transform: uppercase
+			color: #1fbad6
+			&:hover
+				color: #1fbad6
+>>>>>>> parent of 244cd36 (lang в .links)
