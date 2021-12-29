@@ -536,12 +536,6 @@ footer a:hover {
   content: '';
   display: block;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
 .footer_mobile {
   display: -webkit-box;
@@ -601,27 +595,19 @@ footer a:hover {
   color: #999999;
 }
 
-.footer_lang {
+.footer_links_lang {
+  margin-top: 19px;
   text-align: center;
 }
 
-.footer_lang a {
+.footer_links_lang a {
   font-size: 11px;
   font-weight: 400;
   text-transform: uppercase;
   color: #1fbad6;
 }
 
-.footer_lang a:hover {
+.footer:hover {
   color: #1fbad6;
 }
->>>>>>> parent of 244cd36 (lang в .links)
-=======
->>>>>>> parent of 660adb3 (Revert "Revert "ДЗ 34les"")
-=======
->>>>>>> parent of 660adb3 (Revert "Revert "ДЗ 34les"")
-=======
->>>>>>> parent of 5fafa9c (ДЗ 34les)
-=======
->>>>>>> parent of b2d5e32 (3213123)
 /*# sourceMappingURL=style.min.css.map */
