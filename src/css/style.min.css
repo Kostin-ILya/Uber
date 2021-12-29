@@ -33,9 +33,13 @@ header nav {
   text-decoration: none;
 }
 
-.menu_link_item {
-  border-right: 2px dotted black;
+.menu_item {
+  border-right: 2px dotted #4e4949;
   padding-right: 28px;
+}
+
+.menu_item:last-child {
+  border: none;
 }
 
 .subheader {
@@ -98,6 +102,11 @@ header nav {
   color: #ffffff;
 }
 
+.subheader button:hover {
+  background-image: none;
+  background-color: #1eacc7;
+}
+
 .promo {
   padding: 200px 0 132px 0;
   min-height: 800px;
@@ -146,6 +155,11 @@ header nav {
   text-transform: uppercase;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
   color: #ffffff;
+}
+
+.promo_btn:hover {
+  background-image: none;
+  background-color: #1eacc7;
 }
 
 .label {
@@ -227,7 +241,7 @@ header nav {
 
 .mobile {
   min-height: 864px;
-  padding: 48px 0 80px 0;
+  padding: 48px 0 79px 0;
   background: url("../img/mob_app/mobapp_bg.png") center center/cover no-repeat;
 }
 
@@ -276,7 +290,17 @@ header nav {
 }
 
 .mobile_item_plus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
+  margin: 0 auto;
   bottom: 35px;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -288,6 +312,31 @@ header nav {
   cursor: pointer;
 }
 
+.mobile_item_plus:before {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 2px;
+  background-color: #1eacc7;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.mobile_item_plus::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 2px;
+  height: 14px;
+  background-color: #1eacc7;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.mobile_item_plus:hover:before, .mobile_item_plus:hover::after {
+  background-color: #FF5656;
+}
+
 .black {
   min-height: 499px;
   padding-top: 57px;
@@ -296,8 +345,8 @@ header nav {
 }
 
 .black img {
+  margin-top: 56px;
   position: absolute;
-  top: 50%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -328,5 +377,241 @@ header nav {
   font-size: 17px;
   font-weight: 300;
   color: #222222;
+}
+
+.require {
+  padding: 68px 0 84px 0;
+}
+
+.require .title {
+  margin-top: 33px;
+}
+
+.require_block {
+  margin: 33px 0;
+}
+
+.require_block_nmb {
+  margin-bottom: 0;
+}
+
+.require_title {
+  font-size: 22px;
+  font-weight: 400;
+  color: #1ca8c3;
+}
+
+.require_list {
+  list-style-type: none;
+  padding-left: 50px;
+  margin-top: 10px;
+}
+
+.require_list li {
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-weight: 300;
+  color: #222222;
+  line-height: 24px;
+}
+
+.require_list li::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -32px;
+  top: 2px;
+  width: 21px;
+  height: 20px;
+  background: url("../icons/check.png") center center/cover no-repeat;
+}
+
+.require_descr {
+  font-size: 17px;
+  font-weight: 300;
+  color: #1ca8c3;
+}
+
+.require .red .require_title {
+  color: #FF5656;
+}
+
+.require .red .require_list li::before {
+  background: url("../icons/check_red.png") center center/cover no-repeat;
+}
+
+.world {
+  min-height: 717px;
+  padding: 49px 0;
+  background: url("../img/bg/world_bg.jpg") center center/cover no-repeat;
+}
+
+.world .label {
+  width: 76px;
+  background-color: #ffffff;
+  color: #070716;
+}
+
+.world .title {
+  margin-top: 32px;
+  color: #ffffff;
+}
+
+.world .subtitle {
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.world .cities {
+  margin: 0 auto;
+  margin-top: 486px;
+}
+
+.world .cities a {
+  display: block;
+  text-decoration: none;
+  color: #1fbad6;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+.footer {
+  min-height: 156px;
+  padding: 14px 23px 39px;
+}
+
+.footer_divider {
+  margin: 0 auto;
+  width: 299px;
+  height: 4px;
+  background-color: #1fbad6;
+}
+
+.footer_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 34px;
+}
+
+.footer_wrapper > div {
+  width: 33%;
+}
+
+.footer_social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer_social_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: #070716;
+  border-radius: 100%;
+  margin-right: 9px;
+  color: #eee;
+}
+
+.footer_social_item::before {
+  content: '';
+  display: block;
+}
+
+.footer_mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer_mobile_item {
+  margin-left: 9px;
+}
+
+.footer_links {
+  width: 390px;
+  margin: 0 auto;
+}
+
+.footer_links_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer_links_main a {
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #070716;
+}
+
+.footer_links_main a:hover {
+  color: #070716;
+}
+
+.footer_links_sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px;
+}
+
+.footer_links_sub a {
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+.footer_links_sub a:hover {
+  color: #999999;
+}
+
+.footer_links_lang {
+  text-align: center;
+  margin-top: 19px;
+}
+
+.footer_links_lang a {
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #1fbad6;
+}
+
+.footer_links_lang a:hover {
+  color: #1fbad6;
 }
 /*# sourceMappingURL=style.min.css.map */
