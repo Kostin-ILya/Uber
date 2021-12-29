@@ -33,9 +33,13 @@ header nav {
   text-decoration: none;
 }
 
-.menu_link_item {
-  border-right: 2px dotted black;
+.menu_item {
+  border-right: 2px dotted #4e4949;
   padding-right: 28px;
+}
+
+.menu_item:last-child {
+  border: none;
 }
 
 .subheader {
@@ -504,7 +508,7 @@ footer a:hover {
   padding-top: 34px;
 }
 
-.footer_wrapper div {
+.footer_wrapper > div {
   width: 33%;
 }
 
@@ -536,7 +540,6 @@ footer a:hover {
   content: '';
   display: block;
 }
-<<<<<<< HEAD
 
 .footer_mobile {
   display: -webkit-box;
@@ -596,21 +599,18 @@ footer a:hover {
   color: #999999;
 }
 
-.footer_links_lang {
-  margin-top: 19px;
+.footer_lang {
   text-align: center;
 }
 
-.footer_links_lang a {
+.footer_lang a {
   font-size: 11px;
   font-weight: 400;
   text-transform: uppercase;
   color: #1fbad6;
 }
 
-.footer_links_lang a:hover {
+.footer_lang a:hover {
   color: #1fbad6;
 }
-=======
->>>>>>> parent of 5fafa9c (ДЗ 34les)
 /*# sourceMappingURL=style.min.css.map */
