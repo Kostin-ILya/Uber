@@ -642,8 +642,20 @@ footer a:hover {
   .require_list li {
     margin-bottom: 7px;
   }
+  .footer {
+    padding: 14px 5px;
+  }
   .footer_links {
     width: 315px;
+  }
+  .footer_links_sub a {
+    font-size: 10px;
+  }
+  .footer_mobile img {
+    width: 85%;
+  }
+  .footer_mobile_item {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=style.min.css.map */
