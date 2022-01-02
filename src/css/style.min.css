@@ -472,7 +472,7 @@ header nav {
 }
 
 .world .cities a {
-  display: block;
+  position: absolute;
   text-decoration: none;
   color: #1fbad6;
   font-size: 15px;
@@ -618,6 +618,10 @@ footer a:hover {
   color: #1fbad6;
 }
 
+.xs-visible {
+  display: none;
+}
+
 @media (max-width: 1199px) {
   .menu_item {
     padding-right: 20px;
@@ -709,6 +713,9 @@ footer a:hover {
     width: 300px;
     margin-top: 20px;
   }
+  .reasons_img {
+    margin: 0;
+  }
   .mobile_item {
     width: 215px;
     height: 250px;
@@ -725,20 +732,6 @@ footer a:hover {
   }
   .require {
     padding-bottom: 40px;
-  }
-  .require_title {
-    font-size: 18px;
-  }
-  .require_block {
-    margin: 10px 0px;
-  }
-  .require_list {
-    padding-left: 40px;
-  }
-  .require_list li {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 13px;
   }
 }
 
@@ -807,6 +800,45 @@ footer a:hover {
   .hamburger_active span:nth-child(3) {
     -webkit-transform: translateY(3px) rotate(45deg);
             transform: translateY(3px) rotate(45deg);
+  }
+  .xs-hidden {
+    display: none;
+  }
+  .xs-visible {
+    display: block;
+  }
+  .subheader_phone {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+  }
+  .subheader_btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 160px;
+    height: 40px;
+  }
+  .promo_header {
+    line-height: 45px;
+  }
+  .mobile {
+    padding: 15px 0;
+  }
+  .mobile_item_1 {
+    margin-top: 15px;
+  }
+  .mobile_item_2 {
+    margin-top: 15px;
+  }
+  .mobile_item_3 {
+    margin-top: 0;
+  }
+  .require {
+    padding: 15px 0;
   }
 }
 /*# sourceMappingURL=style.min.css.map */

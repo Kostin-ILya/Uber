@@ -74,6 +74,8 @@
     &_promo
       width: 300px
       margin-top: 20px
+    &_img
+      margin: 0
 
   .mobile
     &_item
@@ -91,16 +93,16 @@
 
   .require
     padding-bottom: 40px
-    &_title
-      font-size: 18px
-    &_block
-      margin: 10px 0px
-    &_list
-      padding-left: 40px
-      li
-        margin-top: 5px
-        margin-bottom: 5px
-        font-size: 13px
+    // &_title
+    //   font-size: 18px
+    // &_block
+    //   margin: 10px 0px
+    // &_list
+    //   padding-left: 40px
+    //   li
+    //     margin-top: 5px
+    //     margin-bottom: 5px
+    //     font-size: 13px
 
 @media (max-width: 767px)
   .menu
@@ -147,3 +149,49 @@
           display: none
         &:nth-child(3)
           transform: translateY(3px) rotate(45deg)
+  .xs-hidden
+    display: none
+  .xs-visible
+    display: block
+  .subheader
+    &_phone
+      margin-top: 10px
+      font-size: 16px
+      font-weight: 400
+      text-transform: uppercase
+      color: #ffffff
+      text-align: center
+    &_btn
+      display: block
+      margin: 0 auto
+      margin-top: 10px
+      width: 160px
+      height: 40px
+
+  .promo
+    &_header
+      line-height: 45px
+    // &_subheader
+    //   font-size: 25px
+    // _descr
+    //   font-size: 16px
+
+  .mobile
+    padding: 15px 0
+    &_item
+      &_1
+        margin-top: 15px
+      &_2
+        margin-top: 15px
+      &_3
+        margin-top: 0
+
+  .require
+    padding: 15px 0
+    // &_block
+    //   margin-left: 40px
+    //   text-align: center
+    // &_list
+    //   li
+    //     &::before
+    //       left: 40px
