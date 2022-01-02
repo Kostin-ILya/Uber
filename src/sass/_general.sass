@@ -244,6 +244,7 @@ header
           background-color: $red
 .car
   &_img
+    width: 100%
     margin-top: 56px
     position: absolute
     left: 50%
@@ -316,6 +317,7 @@ header
           background: url('../icons/check_red.png') center center/cover no-repeat
 //  ПО ВСЕМУ МИРУ 
 .world
+  position: relative
   min-height: 717px
   padding: 49px 0
   background: url('../img/bg/world_bg.jpg') center (center / cover) no-repeat
@@ -329,17 +331,19 @@ header
   .subtitle
     margin-top: 20px
     color: #ffffff
-  .cities
-    margin: 0 auto
-    margin-top: 486px
-    a
-      position: absolute
-      text-decoration: none
-      color: #1fbad6
-      font-size: 15px
-      font-weight: 400
-      text-transform: uppercase
-      text-align: center
+  &_link
+    text-decoration: none
+    color: #1fbad6
+    font-size: 15px
+    font-weight: 400
+    text-transform: uppercase
+    text-align: center
+    bottom: 50px
+    left: 50%
+    transform: translateX(-50%)
+    position: absolute
+    &:hover
+      color: #fff
 // ФУТЕР
 footer
   a
