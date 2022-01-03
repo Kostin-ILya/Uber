@@ -896,4 +896,10 @@ footer a:hover {
     min-height: 450px;
   }
 }
+
+@media (max-width: 575px) {
+  .subheader_official {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.min.css.map */
