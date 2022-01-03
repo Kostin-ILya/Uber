@@ -764,7 +764,7 @@ footer a:hover {
   }
   .footer_links {
     margin-top: 15px;
-    width: 390px;
+    width: 70%;
   }
 }
 
@@ -876,6 +876,9 @@ footer a:hover {
   }
   .mobile {
     padding: 15px 0;
+  }
+  .mobile_item {
+    width: 90%;
   }
   .mobile_item_1 {
     margin-top: 15px;
