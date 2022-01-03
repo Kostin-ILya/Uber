@@ -249,6 +249,7 @@ header nav {
 }
 
 .mobile_item {
+  margin: 0 auto;
   position: relative;
   width: 320px;
   height: 280px;
@@ -341,7 +342,6 @@ header nav {
 }
 
 .car_img {
-  width: 100%;
   margin-top: 56px;
   position: absolute;
   left: 50%;
@@ -673,6 +673,9 @@ footer a:hover {
 }
 
 @media (max-width: 991px) {
+  .title {
+    font-size: 28px;
+  }
   .menu_item {
     padding-right: 10px;
   }
@@ -735,29 +738,47 @@ footer a:hover {
     padding-top: 150px;
     min-height: 250px;
   }
-  .require {
-    padding-bottom: 40px;
-  }
-  .require_title {
-    font-size: 18px;
-  }
-  .require_block {
-    margin: 10px 0px;
-  }
-  .require_list {
-    padding-left: 40px;
-  }
-  .require_list li {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 13px;
-  }
   .world {
     min-height: 650px;
+  }
+  .footer_wrapper {
+    padding: 15px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer_wrapper > div {
+    width: 100%;
+  }
+  .footer_social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer_mobile {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 15px;
+  }
+  .footer_links {
+    margin-top: 15px;
+    width: 390px;
   }
 }
 
 @media (max-width: 767px) {
+  .title {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .subtitle {
+    font-size: 15px;
+  }
+  header nav {
+    background-color: #00000099;
+  }
   .menu {
     position: fixed;
     -webkit-box-orient: vertical;
@@ -847,6 +868,12 @@ footer a:hover {
   .promo_header {
     line-height: 45px;
   }
+  .promo_subheader {
+    font-size: 25px;
+  }
+  .promo_descr {
+    font-size: 16px;
+  }
   .mobile {
     padding: 15px 0;
   }
@@ -859,8 +886,14 @@ footer a:hover {
   .mobile_item_3 {
     margin-top: 0;
   }
+  .car_img {
+    margin-top: 140px;
+  }
   .require {
     padding: 15px 0;
+  }
+  .world {
+    min-height: 450px;
   }
 }
 /*# sourceMappingURL=style.min.css.map */

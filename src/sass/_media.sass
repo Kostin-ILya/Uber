@@ -39,6 +39,8 @@
       &_item
         margin: 0
 @media (max-width: 991px)
+  .title
+    font-size: 28px
   .menu
     &_item
       padding-right: 10px
@@ -85,22 +87,44 @@
     &_white
       padding-top: 150px
       min-height: 250px
-  .require
-    padding-bottom: 40px
-    &_title
-      font-size: 18px
-    &_block
-      margin: 10px 0px
-    &_list
-      padding-left: 40px
-      li
-        margin-top: 5px
-        margin-bottom: 5px
-        font-size: 13px
+  // .require
+  //   padding-bottom: 40px
+  //   &_title
+  //     font-size: 18px
+  //   &_block
+  //     margin: 10px 0px
+  //   &_list
+  //     padding-left: 40px
+  //     li
+  //       margin-top: 5px
+  //       margin-bottom: 5px
+  //       font-size: 13px
   .world
     min-height: 650px
+  .footer
+    &_wrapper
+      padding: 15px 0
+      flex-direction: column
+      >div
+        width: 100%
+    &_social
+      justify-content: center
+    &_mobile
+      justify-content: center
+      margin-top: 15px
+    &_links
+      margin-top: 15px
+      width: 390px
 
 @media (max-width: 767px)
+  .title
+    font-size: 30px
+    margin-top: 20px
+  .subtitle
+    font-size: 15px
+  header
+    nav
+      background-color: #00000099
   .menu
     position: fixed
     flex-direction: column
@@ -163,15 +187,13 @@
       margin-top: 10px
       width: 160px
       height: 40px
-
   .promo
     &_header
       line-height: 45px
-    // &_subheader
-    //   font-size: 25px
-    // _descr
-    //   font-size: 16px
-
+    &_subheader
+      font-size: 25px
+    &_descr
+      font-size: 16px
   .mobile
     padding: 15px 0
     &_item
@@ -181,7 +203,9 @@
         margin-top: 15px
       &_3
         margin-top: 0
-
+  .car
+    &_img
+      margin-top: 140px
   .require
     padding: 15px 0
     // &_block
@@ -191,3 +215,5 @@
     //   li
     //     &::before
     //       left: 40px
+  .world
+    min-height: 450px
