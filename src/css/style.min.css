@@ -37,6 +37,10 @@ nav {
   text-decoration: none;
 }
 
+.menu_link:hover {
+  color: #1eacc7;
+}
+
 .menu_item {
   border-right: 2px dotted #4e4949;
   padding-right: 28px;
@@ -87,6 +91,10 @@ nav {
   color: #ffffff;
   text-decoration: none;
   text-align: right;
+}
+
+.subheader_phone:hover {
+  color: #ffffff;
 }
 
 .subheader_btn {
@@ -904,6 +912,14 @@ footer a:hover {
   .menu {
     width: 85%;
   }
+  .menu_item {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+  }
+  .menu_link {
+    display: block;
+  }
   .title {
     font-size: 16px;
     margin-top: 15px;
@@ -940,6 +956,10 @@ footer a:hover {
     font-size: 10px;
     margin-top: 6px;
   }
+  .subheader_btn:hover {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#1eacc7), to(#4ce2ff));
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  }
   .promo {
     min-height: 400px;
     padding: 143px 0 35px 0;
@@ -962,6 +982,10 @@ footer a:hover {
     margin-top: 72px;
     width: 210px;
     height: 50px;
+  }
+  .promo_btn:hover {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#1eacc7), to(#4ce2ff));
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
   }
   .reasons {
     padding: 22px 0 50px 0;
@@ -988,6 +1012,9 @@ footer a:hover {
     padding-top: 80px;
     width: 290px;
     height: 254px;
+  }
+  .mobile_item_plus:hover:before, .mobile_item_plus:hover:after {
+    background-color: #1eacc7;
   }
   .mobile_item_subtitle {
     padding: 0 46px 0 46px;
@@ -1049,6 +1076,9 @@ footer a:hover {
     min-height: 245px;
     padding: 25px 0 0;
   }
+  .footer_divider {
+    width: 253px;
+  }
   .footer_wrapper {
     padding: 20px;
   }
@@ -1068,18 +1098,32 @@ footer a:hover {
             order: 3;
   }
   .footer_links {
-    margin-top: 0;
+    margin: 0 auto;
     width: 290px;
   }
-  .footer_links_main {
+  .footer_links_main a {
     font-size: 14px;
   }
   .footer_links_sub {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+    padding: 0 22px;
     margin-top: 10px;
+  }
+  .footer_links_sub a {
     font-size: 11px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  }
+  .footer_links_lang {
+    margin-top: 13px;
+  }
+  .footer_social {
+    margin-top: 20px;
+  }
+  .footer_mobile {
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=style.min.css.map */

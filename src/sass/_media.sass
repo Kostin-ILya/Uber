@@ -217,6 +217,12 @@
 @media (max-width: 575px)
   .menu
     width: 85%
+    &_item
+      width: 100%
+      text-align: center
+      padding: 5px 0
+    &_link
+      display: block
   .title
     font-size: 16px
     margin-top: 15px
@@ -246,6 +252,8 @@
       height: 28px
       font-size: 10px
       margin-top: 6px
+      &:hover
+        background-image: linear-gradient(to top, $blue 0%, #4ce2ff 100%)
   .promo
     min-height: 400px
     padding: 143px 0 35px 0
@@ -264,6 +272,8 @@
       margin-top: 72px
       width: 210px
       height: 50px
+      &:hover
+        background-image: linear-gradient(to top, $blue 0%, #4ce2ff 100%)
   .reasons
     padding: 22px 0 50px 0
     &_block
@@ -283,10 +293,16 @@
       padding-top: 80px
       width: 290px
       height: 254px
+      &_plus
+        &:hover
+          &:before, &:after
+            background-color: $blue
+
       &_subtitle
         padding: 0 46px 0 46px
         font-size: 18px
         line-height: 31px
+
   .car
     &_black
       padding: 25px 0 33px 0
@@ -328,6 +344,8 @@
   .footer
     min-height: 245px
     padding: 25px 0 0
+    &_divider
+      width: 253px
     &_wrapper
       padding: 20px
       >div
@@ -338,11 +356,22 @@
         &:nth-child(3)
           order: 3
     &_links
-      margin-top: 0
+      margin: 0 auto
       width: 290px
       &_main
-        font-size: 14px
+        a
+          font-size: 14px
       &_sub
+        flex-wrap: wrap
+        justify-content: space-around
+        width: 100%
+        padding: 0 22px
         margin-top: 10px
-        font-size: 11px
-        justify-content: center
+        a
+          font-size: 11px
+      &_lang
+        margin-top: 13px
+    &_social
+      margin-top: 20px
+    &_mobile
+      margin-top: 20px
